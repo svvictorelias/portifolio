@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    color: #828282;
+}
+body{
+    background: url(../images/backgrd1.png) no-repeat  center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+main{
+    text-align: center;
+    max-width: 450px;
+    background-color: #e7e7e7;
+    border-radius: 15px;
+    padding: 0px 70px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.774);
+    
+
+}
+h1, h2{
+    color: #525252
+}
+
+.icons-skills{
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-around;
+}
+.icons-skills img{
+    width: 40px;
+}
+
+.picture img{
+    border-radius: 50%;
+    max-width: 200px;
+    padding: 20px 0px;
+}
+.info-person{
+    padding-bottom: 25px;
+}
+.info-skills h2{
+    padding-bottom: 5px;
+}
+.info-skills{
+    padding-top: 20px;
+}
