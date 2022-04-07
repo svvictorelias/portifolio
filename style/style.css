@@ -71,18 +71,26 @@ section{
     border-radius: 10px;
 }
 section h1{
-    padding: 20px 0px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 20px 0px 0px 0px;
 }
 .projeto{
     padding: 25px 15px;
     display: flex;
     align-items: center;
+    border-bottom: solid #82828260 2px;
+    flex-direction: column;
+}
+
+.projeto:last-child{
+    border-bottom: none;
 }
 
 .projeto img{
     padding-right: 10px;
     width: 150px;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 .projeto h2{
     text-align: left;
@@ -94,4 +102,10 @@ section h1{
 .link{
     padding-top: 10px;
     font-weight: 700;
+}
+.projeto-info{
+    display: flex;
+}
+.projeto-foto p{
+    text-align: center;
 }
