@@ -84,13 +84,13 @@ section h1{
     flex-direction: column;
 }
 .todos-projetos{
-    display: none;
+    display: flex;
     flex-direction: column;
     text-align: center;
     
 }
 .sessao-sobre-mim{
-    display: flex;
+    display: none;
     padding: 25px 15px;
     align-items: center;
     border-bottom: solid #82828260 2px;
@@ -127,7 +127,6 @@ section h1{
 .sessao-sobre-mim p{
     font-size: 1.2rem;
     padding: 10px 20px;
-    text-align: justify;
     margin: auto;
     font-weight: 700;
 }
@@ -158,10 +157,13 @@ section h1{
     
 }
 .sessao-portifolio{
-    display: none;
+    display: flex;
     width: 100%;
     justify-content: center;
     
+}
+.sessao-sobre{
+    display: none;
 }
 .sessao .sessao-portifolio img{
     position: absolute;
