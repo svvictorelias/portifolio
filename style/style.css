@@ -79,10 +79,28 @@ section h1{
 }
 .projeto{
     padding: 25px 15px;
-    display: flex;
     align-items: center;
     border-bottom: solid #82828260 2px;
     flex-direction: column;
+}
+.todos-projetos{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.sessao-sobre-mim{
+    display: flex;
+    padding: 25px 15px;
+    align-items: center;
+    border-bottom: solid #82828260 2px;
+    flex-direction: column;
+    
+}
+.sessao-sobre-mim img{
+    padding: 25px 0px;
+    max-width: 350px;
+    border-radius: 10%;
 }
 
 .projeto:last-child{
@@ -94,8 +112,8 @@ section h1{
     width: 150px;
     border-radius: 10%;
 }
+
 .projeto h2{
-    text-align: left;
     padding-bottom: 15px;
     color: #575757;
     font-size: 1.8rem;
@@ -105,6 +123,13 @@ section h1{
     padding-top: 10px;
     text-align: center;
     margin: auto;
+}
+.sessao-sobre-mim p{
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-align: justify;
+    margin: auto;
+    font-weight: 700;
 }
 .link{
     padding-top: 10px;
@@ -120,20 +145,31 @@ section h1{
     padding: 20px 0px 0px 0px;
     display: flex;
     justify-content: center;  
+    position: relative;
 }
 .sessao h1{
     padding: 0;
     color: #474747;
 }
 .sessao-sobre{
-    display: none;
-}
-.sessao-portifolio{
     display: flex;
     width: 100%;
     justify-content: center;
+    
 }
-.sessao img{
-    width: 35px;
+.sessao-portifolio{
+    display: none;
+    width: 100%;
+    justify-content: center;
+    
 }
-
+.sessao .sessao-portifolio img{
+    position: absolute;
+    right: 20px;
+    width: 40px;
+}
+.sessao .sessao-sobre img{
+    position: absolute;
+    left: 20px;
+    width: 40px;
+}

@@ -32,42 +32,72 @@
         <div class="sessao">
             <div class="sessao-portifolio">
                 <h1>Portifólio</h1>
-                <a href="#"><img src="images/right.png" alt="seta para a direita"></a>
+                <a href="javascript: void(0)" id="btn-portifolio" onclick="changePortifolio()"><img src="images/right.png" alt="seta para a direita"></a>
             </div>
             <div class="sessao-sobre">
                 <h1>Sobre mim</h1>
+                <a href="javascript: void(0)" id="btn-sobre"onclick="changeSobreMim()"><img src="images/left.png" alt="seta para a esquerda"></a>
             </div>
         </div>
-        <div class="projeto">
-            <h2>QrCode Scanner</h2>
-            <div class="projeto-info">
-                <div class="projeto-foto">
-                    <img src="images/qrcode.PNG" alt="">
+        <div class="todos-projetos">
+            <div class="projeto">
+                <h2>QrCode Scanner</h2>
+                <div class="projeto-info">
+                    <div class="projeto-foto">
+                        <img src="images/qrcode.PNG" alt="">
+                    </div>
+                    <p>Projeto realizado para validar conceitos de html e css puro. Conceitos importantes de cascata, indentação e estruturação do DOM, foram cruciais para se alcançar um resultado esperado. Através das medias querys do CSS foi aplicado responsividade. Sendo assim, este projeto está 100% adaptável as mais diferentes resoluções de tela!</p>
                 </div>
-                <p>Projeto realizado para validar conceitos de html e css puro. Conceitos importantes de cascata, indentação e estruturação do DOM, foram cruciais para se alcançar um resultado esperado. Através das medias querys do CSS foi aplicado responsividade. Sendo assim, este projeto está 100% adaptável as mais diferentes resoluções de tela!</p>
+                <p class="link"><a href="https://svvictorelias.github.io/QrCode/" target="_blank">Acesse o site</a></p>
             </div>
-            <p class="link"><a href="https://svvictorelias.github.io/QrCode/" target="_blank">Acesse o site</a></p>
+            <div class="projeto">
+                <h2>Music Plan</h2>
+                <div class="projeto-info">
+                    <div class="projeto-foto">
+                        <img src="images/musicplan.PNG" alt="">
+                    </div>
+                    <p>Nesse projeto fixei conceitos importantes sobre classes e suas diferentes funcionalidades. Display-Flex nesse projeto fez toda a mágica acontecer! </p>
+                </div>
+                <p class="link"><a href="https://svvictorelias.github.io/music-plan/" target="_blank">Acesse o site</a></p>
+            </div>
+            <div class="projeto">
+                <h2>NFT Card</h2>
+                <div class="projeto-info">
+                    <div class="projeto-foto">
+                        <img src="images/nftcard.PNG" alt="">
+                    </div>
+                    <p>Quem nunca quis ter uma NFT em seu nome?! Nesse card além dos conceitos de estruturação do DOM e das regras de cascata do CSS, foi aplicado pseudo-classes para gerar um efeito ao passar o mouse sobre alguns elementos, como a imagem. 100% responsivo e aplicável a qualquer tela!(Eu espero haha) </p>
+                </div>
+                <p class="link"><a href="https://svvictorelias.github.io/nft-card/" target="_blank">Acesse o site</a></p>
+            </div>
         </div>
-        <div class="projeto">
-            <h2>Music Plan</h2>
-            <div class="projeto-info">
-                <div class="projeto-foto">
-                    <img src="images/musicplan.PNG" alt="">
-                </div>
-                <p>Nesse projeto fixei conceitos importantes sobre classes e suas diferentes funcionalidades. Display-Flex nesse projeto fez toda a mágica acontecer! </p>
-            </div>
-            <p class="link"><a href="https://svvictorelias.github.io/music-plan/" target="_blank">Acesse o site</a></p>
-        </div>
-        <div class="projeto">
-            <h2>NFT Card</h2>
-            <div class="projeto-info">
-                <div class="projeto-foto">
-                    <img src="images/nftcard.PNG" alt="">
-                </div>
-                <p>Quem nunca quis ter uma NFT em seu nome?! Nesse card além dos conceitos de estruturação do DOM e das regras de cascata do CSS, foi aplicado pseudo-classes para gerar um efeito ao passar o mouse sobre alguns elementos, como a imagem. 100% responsivo e aplicável a qualquer tela!(Eu espero haha) </p>
-            </div>
-            <p class="link"><a href="https://svvictorelias.github.io/nft-card/" target="_blank">Acesse o site</a></p>
+        <div class="sessao-sobre-mim">
+            <h2>Desenvolvedor apaixonado por soluções!</h2>
+            <img src="images/brain.png" alt="cerebro com braços">
+            <p>Prazer, Victor! Tenho 23 anos e estou continuamente estudando Desenvolvimento Web, mais especialmente FrontEnd com JavaScript. Atualmente trabalho em projetos pessoas como Desenvolvedor FrontEnd. Profissionalmente trabalho com automações em Python, analise de dados com SQL e Power BI, analista de InfraEstrutura On-primese e alguns serviços de Cloud(AWS). Me apaixonei pelo Desenvolvimento Web e estou em constante evolução! </p>
         </div>
     </section>
+    <script>
+        function changeSobreMim(){
+            var portifolio = document.querySelector('.todos-projetos')
+            var sobreMim = document.querySelector('.sessao-sobre-mim')
+            var leftbtn = document.querySelector('.sessao-sobre')
+            var title = document.querySelector('.sessao-portifolio')
+            portifolio.style.display = "flex"
+            title.style.display = "flex"
+            sobreMim.style.display = "none"
+            leftbtn.style.display = "none"
+        }
+        function changePortifolio(){
+            var portifolio = document.querySelector('.todos-projetos')
+            var sobreMim = document.querySelector('.sessao-sobre-mim')
+            var leftbtn = document.querySelector('.sessao-sobre')
+            var title = document.querySelector('.sessao-portifolio')
+            portifolio.style.display = "none"
+            title.style.display = "none"
+            sobreMim.style.display = "flex"
+            leftbtn.style.display = "flex"
+        }
+    </script>
 </body>
 </html>
