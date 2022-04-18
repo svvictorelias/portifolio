@@ -3,6 +3,10 @@ var sobreMim = document.querySelector('.sessao-sobre-mim')
 var leftbtn = document.querySelector('.sessao-sobre')
 var title = document.querySelector('.sessao-portifolio')
 
+const textQrcode = document.querySelector('#textQrcode')
+const textMusic = document.querySelector('#textMusic')
+const textNft = document.querySelector('#textNft')
+
 function changeSobreMim(){
     portifolio.style.display = "flex"
     title.style.display = "flex"
@@ -15,3 +19,20 @@ function changePortifolio(){
     sobreMim.style.display = "flex"
     leftbtn.style.display = "flex"
 }
+function DescGit(){
+    fetch('https://api.github.com/repos/svvictorelias/QrCode')
+    .then(resp => resp.json())
+    .then(desc =>
+    textQrcode.innerHTML = desc.description)
+
+    fetch('https://api.github.com/repos/svvictorelias/music-plan')
+    .then(resp => resp.json())
+    .then(desc =>
+    textMusic.innerHTML = desc.description)
+
+    fetch('https://api.github.com/repos/svvictorelias/nft-card')
+    .then(resp => resp.json())
+    .then(descQR =>
+    textNft.innerHTML = descQR.description)
+  }
+  DescGit()
