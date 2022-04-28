@@ -37,6 +37,11 @@ function DescGit(){
     .then(descQR =>
     textNft.innerHTML = descQR.description)
 
+    fetch('https://api.github.com/repos/svvictorelias/tip-calculator')
+    .then(resp => resp.json())
+    .then(descQR =>
+    textTipCalculator.innerHTML = descQR.description)
+
     fetch('https://api.github.com/repos/svvictorelias/calculadora')
     .then(resp => resp.json())
     .then(descQR =>
