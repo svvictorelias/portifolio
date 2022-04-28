@@ -6,6 +6,7 @@ var title = document.querySelector('.sessao-portifolio')
 const textQrcode = document.querySelector('#textQrcode')
 const textMusic = document.querySelector('#textMusic')
 const textNft = document.querySelector('#textNft')
+const textTipCalculator = document.querySelector('#textTipCalculator')
 
 function changeSobreMim(){
     portifolio.style.display = "flex"
@@ -34,5 +35,10 @@ function DescGit(){
     .then(resp => resp.json())
     .then(descQR =>
     textNft.innerHTML = descQR.description)
+
+    fetch('https://api.github.com/repos/svvictorelias/tip-calculator')
+    .then(resp => resp.json())
+    .then(descQR =>
+        textTipCalculator.innerHTML = descQR.description)
   }
   DescGit()
